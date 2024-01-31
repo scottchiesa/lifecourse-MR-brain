@@ -1,7 +1,7 @@
 # lifecourse-MR-brain
 Scripts written for manuscript employing a two-sample multivariable lifecourse Mendelian Randomization approach in UK Biobank (UKB) to investigate the independent effects of childhood and adult body size on midlife brain structure. Secondary analyses assessing similar brain traits in childhood were conducted in the Adolescent Brain Cognitive Development Study (ABCD).
 
-This project has been my first foray into MR as well as the first time I have used R and Bash to conduct any sort of analyses, so I'm well aware that the way I've approached much of the coding is extremely long-winded and inefficient; this was mainly because I was learning each necessary technique to conduct the analysis as I went before combining everything together to create my final analysis. It does the job though and hopefully will be refined in future projects using these methods.
+This project has been my first foray into MR as well as the first time I have used R and Bash to conduct any sort of analyses, so I'm well aware that the way I've approached much of the coding is extremely long-winded and inefficient; this was mainly because I was learning each necessary technique as I went before combining everything together to create my final analysis. It does the job though and hopefully will be refined in future projects using these methods.
 
 Paper shortly to be submitted for peer review and page will be updated once it is eventually accpeted and published somewhere. Current abstract posted below though for info.
 
