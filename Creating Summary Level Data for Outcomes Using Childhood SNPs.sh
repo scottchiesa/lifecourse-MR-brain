@@ -7,7 +7,7 @@
 for i in UKB_*.txt;
 do ~/plink2 \
 --ci 0.95 \
---covar /home/rmgpstc/Scratch/UKB_MRBRAIN/71702_10_PCs_final_PLINK_format.txt `#use PCs file in same folder` \
+--covar /home/rmgpstc/Scratch/UKB_MRBRAIN/covars.txt `#use PCs file in same folder` \
 --gen /home/rmgpstc/Scratch/UKB_MRBRAIN/extracted_child_SNPs_nov2.gen ref-last `#gen file created in earlier step`\
 --glm cols=+a1freq omit-ref `#tell plink to run a glm`\
 --pheno ${i} `#tell plink to loop phenos, or if only one pheno use other .sh file`\
