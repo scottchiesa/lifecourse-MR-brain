@@ -268,3 +268,95 @@ replace Age = "Adult" if Age == ""
 order Age
  
 save "Y:\UKB\MR\Data Files\Univariate Results Not Normalised.dta", replace
+
+
+//Birthweight//
+
+
+//Normalised to ICV//
+
+import excel "Y:\UKB\MR\Data Files\Birthweight Outcomes\Results Files\tvn_results.xlsx", sheet("Sheet1") firstrow clear
+destring Beta - p, replace
+save "Y:\UKB\MR\Data Files\Birthweight Outcomes\Results Files\tvn_results.dta", replace
+import excel "Y:\UKB\MR\Data Files\Birthweight Outcomes\Results Files\gmn_results.xlsx", sheet("Sheet1") firstrow clear
+destring Beta - p, replace
+save "Y:\UKB\MR\Data Files\Birthweight Outcomes\Results Files\gmn_results.dta", replace
+import excel "Y:\UKB\MR\Data Files\Birthweight Outcomes\Results Files\arean_results.xlsx", sheet("Sheet1") firstrow clear
+destring Beta - p, replace
+save "Y:\UKB\MR\Data Files\Birthweight Outcomes\Results Files\arean_results.dta", replace
+import excel "Y:\UKB\MR\Data Files\Birthweight Outcomes\Results Files\thickn_results.xlsx", sheet("Sheet1") firstrow clear		//change so not normalised//
+destring Beta - p, replace
+save "Y:\UKB\MR\Data Files\Birthweight Outcomes\Results Files\thickn_results.dta", replace
+import excel "Y:\UKB\MR\Data Files\Birthweight Outcomes\Results Files\wmn_results.xlsx", sheet("Sheet1") firstrow clear
+destring Beta - p, replace
+save "Y:\UKB\MR\Data Files\Birthweight Outcomes\Results Files\wmn_results.dta", replace
+import excel "Y:\UKB\MR\Data Files\Birthweight Outcomes\Results Files\logwmhn_results.xlsx", sheet("Sheet1") firstrow clear	//change so not normalised//
+destring Beta - p, replace
+save "Y:\UKB\MR\Data Files\Birthweight Outcomes\Results Files\logwmhn_results.dta", replace
+import excel "Y:\UKB\MR\Data Files\Birthweight Outcomes\Results Files\thaln_results.xlsx", sheet("Sheet1") firstrow clear
+destring Beta - p, replace
+save "Y:\UKB\MR\Data Files\Birthweight Outcomes\Results Files\thaln_results.dta", replace
+import excel "Y:\UKB\MR\Data Files\Birthweight Outcomes\Results Files\hippon_results.xlsx", sheet("Sheet1") firstrow clear
+destring Beta - p, replace
+save "Y:\UKB\MR\Data Files\Birthweight Outcomes\Results Files\hippon_results.dta", replace
+import excel "Y:\UKB\MR\Data Files\Birthweight Outcomes\Results Files\amygn_results.xlsx", sheet("Sheet1") firstrow clear
+destring Beta - p, replace
+save "Y:\UKB\MR\Data Files\Birthweight Outcomes\Results Files\amygn_results.dta", replace
+import excel "Y:\UKB\MR\Data Files\Child BW Outcomes\Results Files\tvn_results.xlsx", sheet("Sheet1") firstrow clear
+destring Beta - p, replace
+save "Y:\UKB\MR\Data Files\Child BW Outcomes\Results Files\tvn_results.dta", replace
+import excel "Y:\UKB\MR\Data Files\Child BW Outcomes\Results Files\gmn_results.xlsx", sheet("Sheet1") firstrow clear
+destring Beta - p, replace
+save "Y:\UKB\MR\Data Files\Child BW Outcomes\Results Files\gmn_results.dta", replace
+import excel "Y:\UKB\MR\Data Files\Child BW Outcomes\Results Files\arean_results.xlsx", sheet("Sheet1") firstrow clear
+destring Beta - p, replace
+save "Y:\UKB\MR\Data Files\Child BW Outcomes\Results Files\arean_results.dta", replace
+import excel "Y:\UKB\MR\Data Files\Child BW Outcomes\Results Files\thickn_results.xlsx", sheet("Sheet1") firstrow clear
+destring Beta - p, replace
+save "Y:\UKB\MR\Data Files\Child BW Outcomes\Results Files\thickn_results.dta", replace
+import excel "Y:\UKB\MR\Data Files\Child BW Outcomes\Results Files\wmn_results.xlsx", sheet("Sheet1") firstrow clear
+destring Beta - p, replace
+save "Y:\UKB\MR\Data Files\Child BW Outcomes\Results Files\wmn_results.dta", replace
+import excel "Y:\UKB\MR\Data Files\Child BW Outcomes\Results Files\logwmhn_results.xlsx", sheet("Sheet1") firstrow clear
+destring Beta - p, replace
+save "Y:\UKB\MR\Data Files\Child BW Outcomes\Results Files\logwmhn_results.dta", replace
+import excel "Y:\UKB\MR\Data Files\Child BW Outcomes\Results Files\thaln_results.xlsx", sheet("Sheet1") firstrow clear
+destring Beta - p, replace
+save "Y:\UKB\MR\Data Files\Child BW Outcomes\Results Files\thaln_results.dta", replace
+import excel "Y:\UKB\MR\Data Files\Child BW Outcomes\Results Files\hippon_results.xlsx", sheet("Sheet1") firstrow clear
+destring Beta - p, replace
+save "Y:\UKB\MR\Data Files\Child BW Outcomes\Results Files\hippon_results.dta", replace
+import excel "Y:\UKB\MR\Data Files\Child BW Outcomes\Results Files\amygn_results.xlsx", sheet("Sheet1") firstrow clear
+destring Beta - p, replace
+save "Y:\UKB\MR\Data Files\Child BW Outcomes\Results Files\amygn_results.dta", replace
+
+use "Y:\UKB\MR\Data Files\Birthweight Outcomes\Results Files\tvn_results.dta", clear
+append using "Y:\UKB\MR\Data Files\Birthweight Outcomes\Results Files\gmn_results.dta", force
+append using "Y:\UKB\MR\Data Files\Birthweight Outcomes\Results Files\arean_results.dta", force
+append using "Y:\UKB\MR\Data Files\Birthweight Outcomes\Results Files\thickn_results.dta", force		//change so not normalised//
+append using "Y:\UKB\MR\Data Files\Birthweight Outcomes\Results Files\wmn_results.dta", force
+append using "Y:\UKB\MR\Data Files\Birthweight Outcomes\Results Files\logwmhn_results.dta", force		//change so not normalised//
+append using "Y:\UKB\MR\Data Files\Birthweight Outcomes\Results Files\hippon_results.dta", force
+append using "Y:\UKB\MR\Data Files\Birthweight Outcomes\Results Files\amygn_results.dta", force
+append using "Y:\UKB\MR\Data Files\Birthweight Outcomes\Results Files\thaln_results.dta", force
+
+
+gen Age = ""
+replace Age = "Birthweight"
+
+append using "Y:\UKB\MR\Data Files\Child BW Outcomes\Results Files\tvn_results.dta", force
+append using "Y:\UKB\MR\Data Files\Child BW Outcomes\Results Files\gmn_results.dta", force
+append using "Y:\UKB\MR\Data Files\Child BW Outcomes\Results Files\arean_results.dta", force
+append using "Y:\UKB\MR\Data Files\Child BW Outcomes\Results Files\thickn_results.dta", force		//change so not normalised//
+append using "Y:\UKB\MR\Data Files\Child BW Outcomes\Results Files\wmn_results.dta", force
+append using "Y:\UKB\MR\Data Files\Child BW Outcomes\Results Files\logwmhn_results.dta", force		//change so not normalised//
+append using "Y:\UKB\MR\Data Files\Child BW Outcomes\Results Files\hippon_results.dta", force
+append using "Y:\UKB\MR\Data Files\Child BW Outcomes\Results Files\amygn_results.dta", force
+append using "Y:\UKB\MR\Data Files\Child BW Outcomes\Results Files\thaln_results.dta", force
+
+
+replace Age = "Child" if Age == ""
+
+order Age
+ 
+save "Y:\UKB\MR\Data Files\Univariate Birthweight Results.dta", replace
