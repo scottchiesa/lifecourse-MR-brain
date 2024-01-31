@@ -131,12 +131,12 @@ import delimited "Y:\UKB\R Scripts and Analyses\Output Files\gmn_bw_output_file.
 save "Y:\UKB\R Scripts and Analyses\Output Files\gmn_bw_output_file.dta", replace
 import delimited "Y:\UKB\R Scripts and Analyses\Output Files\arean_bw_output_file.txt", clear
 save "Y:\UKB\R Scripts and Analyses\Output Files\arean_bw_output_file.dta", replace
-import delimited "Y:\UKB\R Scripts and Analyses\Output Files\thickn_bw_output_file.txt", clear
-save "Y:\UKB\R Scripts and Analyses\Output Files\thickn_bw_output_file.dta", replace
+import delimited "Y:\UKB\R Scripts and Analyses\Output Files\thick_bw_output_file.txt", clear
+save "Y:\UKB\R Scripts and Analyses\Output Files\thick_bw_output_file.dta", replace
 import delimited "Y:\UKB\R Scripts and Analyses\Output Files\wmn_bw_output_file.txt", clear
 save "Y:\UKB\R Scripts and Analyses\Output Files\wmn_bw_output_file.dta", replace
-import delimited "Y:\UKB\R Scripts and Analyses\Output Files\logwmhn_bw_output_file.txt", clear
-save "Y:\UKB\R Scripts and Analyses\Output Files\logwmhn_bw_output_file.dta", replace
+import delimited "Y:\UKB\R Scripts and Analyses\Output Files\logwmh_bw_output_file.txt", clear
+save "Y:\UKB\R Scripts and Analyses\Output Files\logwmh_bw_output_file.dta", replace
 import delimited "Y:\UKB\R Scripts and Analyses\Output Files\amygn_bw_output_file.txt", clear
 save "Y:\UKB\R Scripts and Analyses\Output Files\amygn_bw_output_file.dta", replace
 import delimited "Y:\UKB\R Scripts and Analyses\Output Files\hippon_bw_output_file.txt", clear
@@ -147,9 +147,9 @@ save "Y:\UKB\R Scripts and Analyses\Output Files\thaln_bw_output_file.dta", repl
 use "Y:\UKB\R Scripts and Analyses\Output Files\tvn_bw_output_file.dta", clear
 append using "Y:\UKB\R Scripts and Analyses\Output Files\gmn_bw_output_file.dta", force
 append using "Y:\UKB\R Scripts and Analyses\Output Files\arean_bw_output_file.dta", force
-append using "Y:\UKB\R Scripts and Analyses\Output Files\thickn_bw_output_file.dta", force
+append using "Y:\UKB\R Scripts and Analyses\Output Files\thick_bw_output_file.dta", force
 append using "Y:\UKB\R Scripts and Analyses\Output Files\wmn_bw_output_file.dta", force
-append using "Y:\UKB\R Scripts and Analyses\Output Files\logwmhn_bw_output_file.dta", force
+append using "Y:\UKB\R Scripts and Analyses\Output Files\logwmh_bw_output_file.dta", force
 append using "Y:\UKB\R Scripts and Analyses\Output Files\amygn_bw_output_file.dta", force
 append using "Y:\UKB\R Scripts and Analyses\Output Files\hippon_bw_output_file.dta", force
 append using "Y:\UKB\R Scripts and Analyses\Output Files\thaln_bw_output_file.dta", force
