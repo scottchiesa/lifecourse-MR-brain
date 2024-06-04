@@ -1,11 +1,11 @@
-# Childhood Body Size Underlies Numerous Adult Brain Traits Commonly Attributed to Midlife Obesity: A Lifecourse Mendelian Randomization Study
+# Childhood Adiposity Underlies Numerous Adult Brain Traits Commonly Attributed to Midlife Obesity: A Lifecourse Mendelian Randomization Study
 _Scott T. Chiesa, Lydia Rader, Victoria Garfield, Isabelle Foote, Sana Suri, George Davey Smith, Alun D. Hughes, and Tom G. Richardson_
 
-Scripts written for manuscript employing a two-sample multivariable lifecourse Mendelian Randomization approach in UK Biobank (UKB) to investigate the independent effects of childhood and adult body size on midlife brain structure. Secondary analyses assessing similar brain traits in childhood were conducted in the Adolescent Brain Cognitive Development Study (ABCD).
+Scripts written for manuscript employing a two-sample multivariable lifecourse Mendelian Randomization approach in UK Biobank (UKB) to investigate the independent effects of childhood and adult adiposity on midlife brain structure. Secondary analyses assessing similar brain traits in childhood were conducted in the Adolescent Brain Cognitive Development Study (ABCD).
 
-This project has been my first foray into MR as well as the first time I have used R and Bash to conduct any sort of analyses, so I'm well aware that the way I've approached much of the coding is extremely long-winded and inefficient; this was mainly because I was learning each necessary technique as I went before combining everything together to create my final analysis. It does the job though and hopefully will be refined in future projects using these methods.
+This project has been my first foray into MR as well as the first time I have used R and Bash to conduct any sort of analyses, so I'm well aware that the way I've approached much of the coding is extremely long-winded and inefficient. This was mainly because I was learning each necessary technique as I went before combining everything together to create my final analysis. It does the job though and hopefully will be refined in future projects using these methods.
 
-Manuscript accepted to Brain, June 2024. DOI to be provided once published.
+Manuscript was accepted to Brain in June 2024 and DOI to final article will be provided here once published.
 
 ## ABSTRACT
 
