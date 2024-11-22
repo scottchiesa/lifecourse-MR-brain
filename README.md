@@ -5,7 +5,7 @@ Scripts written for manuscript employing a two-sample multivariable lifecourse M
 
 This project has been my first foray into MR as well as the first time I have used R and Bash to conduct any sort of analyses, so I'm well aware that the way I've approached much of the coding is _extremely_ long-winded and inefficient. This was mainly because I was learning each necessary technique as I went before combining everything together to create my final analysis. It does the job though and hopefully will be refined in future projects using these methods.
 
-Manuscript was accepted to Brain in June 2024 and DOI to final article will be provided here once published.
+Manuscript now published in Brain at https://doi.org/10.1093/brain/awae198.
 
 ## ABSTRACT
 
